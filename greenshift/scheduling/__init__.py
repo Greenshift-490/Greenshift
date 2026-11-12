@@ -6,6 +6,9 @@ adapter can consume either) without changes.
 """
 
 from greenshift.scheduling.base import ScheduledJob, Scheduler, schedule_to_frame
+from greenshift.scheduling.carbon_aware import CarbonAwareScheduler
+from greenshift.scheduling.deadlines import DeadlineViolation
 from greenshift.scheduling.fifo import FifoScheduler
 
-__all__ = ["ScheduledJob", "Scheduler", "schedule_to_frame", "FifoScheduler"]
+__all__ = ["ScheduledJob", "Scheduler", "schedule_to_frame", "FifoScheduler",
+           "CarbonAwareScheduler", "DeadlineViolation"]
