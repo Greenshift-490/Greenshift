@@ -3,6 +3,10 @@
 A carbon-aware scheduler that runs flexible cloud workloads during cleaner-energy periods
 while still meeting their deadlines, and compares the results against a FIFO baseline.
 
+**New to the project? Start with the [MVP walkthrough](docs/MVP_WALKTHROUGH.md).** It
+explains what we built, the logic behind each step, the results so far, and how to run
+the full pipeline yourself.
+
 ## Setup
 
 Requires Python 3.11 or newer.
@@ -38,6 +42,7 @@ the retrieval time in its name, so earlier forecasts are never overwritten.
 ```
 greenshift/     the Python package (all source code lives here)
 tests/          pytest tests, one file per module
+docs/           project documentation
 ```
 
 ## Contributing
