@@ -10,6 +10,7 @@ venv/
 
 # Downloaded data (re-download with the data scripts instead of committing)
 data/raw/
+data/processed/
 
 # Editors / OS
 .vscode/
