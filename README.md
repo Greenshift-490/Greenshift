@@ -17,6 +17,16 @@ pytest
 `pip install -e` installs the `greenshift` package in "editable" mode, so code changes take
 effect without reinstalling.
 
+## Downloading CAISO data
+
+```bash
+python -m greenshift.data.oasis --query SLD_FCST --market DAM --day 2026-10-01
+python -m greenshift.data.oasis --query SLD_REN_FCST --market DAM --day 2026-10-01
+```
+
+Files are saved to `data/raw/` (ignored by git). Each download gets its own file with
+the retrieval time in its name, so earlier forecasts are never overwritten.
+
 ## Project layout
 
 ```
