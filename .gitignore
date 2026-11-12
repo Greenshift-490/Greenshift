@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Downloaded data (re-download with the data scripts instead of committing)
+data/raw/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Secrets
+.env
